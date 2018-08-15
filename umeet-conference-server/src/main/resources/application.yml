@@ -1,0 +1,64 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8760/eureka/
+
+spring:
+  application:
+    name: conference-service
+  devtools:
+    restart:
+      enabled: false
+    livereload:
+      enabled: false
+ # zipkin:
+  #  base-url: http://localhost:9012
+
+  http:
+    multipart:
+      enabled: true
+      file-size-threshold: 0
+      location: D:/test
+      max-file-size: 1Mb
+      max-request-size: 10Mb
+
+logging:
+  level:
+    tk:
+      mybatis: TRACE
+    com:
+      framework: TRACE
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+mybatis:
+  type-aliases-package: com.umeet.conference.model
+  model:
+    pack: com.umeet.conference.model
+  table:
+    auto: update
+  mapper-locations: classpath*:/mappers/**.xml
+  configuration:
+    mapUnderscoreToCamelCase: true
+mapper:
+  mappers: com.umeet.conference.utills.MyMapper
+  not-empty: true
+  identity: MYSQL
+
+
+druid:
+  url: jdbc:mysql://localhost:3306/syvcm_fg?useUnicode=true&characterEncoding=utf8&useSSL=false
+  driver-class: com.mysql.jdbc.Driver
+  username: root
+  password: systec
+  initial-size: 1
+  min-idle: 1
+  max-active: 20
+  test-on-borrow: true

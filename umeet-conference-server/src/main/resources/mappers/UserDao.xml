@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.umeet.conference.dao.UserDao">
+  <resultMap id="BaseResultMap" type="com.umeet.conference.model.User">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="account" jdbcType="VARCHAR" property="account" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="host_id" jdbcType="VARCHAR" property="hostId" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="org_id" jdbcType="VARCHAR" property="orgId" />
+    <result column="role_id" jdbcType="VARCHAR" property="roleId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="position" jdbcType="VARCHAR" property="position" />
+    <result column="is_enable" jdbcType="INTEGER" property="isEnable" />
+    <result column="gender" jdbcType="INTEGER" property="gender" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="cardno" jdbcType="INTEGER" property="cardNo" />
+  </resultMap>
+
+
+  <!-- 根据用户id查询分组信息 -->
+  <select id="selectByAccount"  resultMap="BaseResultMap">
+  		SELECT * FROM tb_user t1 WHERE t1.1=1
+  		<if test="account != null and account !=1">
+  			t1.account #{account}
+  		</if>
+  </select>
+
+
+  <select id="queryUserMaxSort"  resultMap="BaseResultMap">
+    SELECT * FROM tb_user u WHERE u.sort =  ( SELECT MAX(b.sort) FROM tb_user b  )
+  </select>
+
+  <update id="disableUserByType">
+    update  tb_user t1 set t1.is_enable = '1' where t1.type = #{type}
+  </update>
+
+  <update id="enableUserByType">
+    update  tb_user t1 set t1.is_enable = '0' where t1.type != #{type}
+  </update>
+
+</mapper>

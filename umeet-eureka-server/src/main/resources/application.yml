@@ -1,0 +1,17 @@
+server:
+  port: 8760
+spring:
+  application:
+    name: umeet-eureka-server
+  profiles:
+    active: umeet-eureka-server
+eureka:
+  server:
+    enable-self-preservation: false
+  instance:
+    hostname: umeet-eureka-server
+  client:
+    fetchRegistry: false
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
