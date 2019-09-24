@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="admin-service" />
+        <module name="umeet-admin-server" />
+        <module name="umeet-auth-server" />
+        <module name="umeet-conference-server" />
+        <module name="umeet-eureka-server" />
+        <module name="umeet-gateway-server" />
+        <module name="umeete-conference-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin-service" target="1.8" />
+      <module name="admin-service (1)" target="1.8" />
+      <module name="admin-service (2)" target="1.8" />
+      <module name="umeet-admin-server" target="1.8" />
+      <module name="umeet-admin-server (1)" target="1.8" />
+      <module name="umeet-admin-server (2)" target="1.8" />
+      <module name="umeet-auth-server" target="1.8" />
+      <module name="umeet-auth-server (1)" target="1.8" />
+      <module name="umeet-auth-server (2)" target="1.8" />
+      <module name="umeet-clouds" target="1.8" />
+      <module name="umeet-clouds (1)" target="1.8" />
+      <module name="umeet-conference-server" target="1.8" />
+      <module name="umeet-eureka-server" target="1.8" />
+      <module name="umeet-eureka-server (1)" target="1.8" />
+      <module name="umeet-eureka-server (2)" target="1.8" />
+      <module name="umeet-gateway-server" target="1.8" />
+      <module name="umeet-gateway-server (1)" target="1.8" />
+      <module name="umeet-gateway-server (2)" target="1.8" />
+      <module name="umeete-conference-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

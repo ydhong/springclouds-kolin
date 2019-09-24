@@ -52,7 +52,6 @@ mapper:
   not-empty: true
   identity: MYSQL
 
-
 druid:
   url: jdbc:mysql://localhost:3306/syvcm_fg?useUnicode=true&characterEncoding=utf8&useSSL=false
   driver-class: com.mysql.jdbc.Driver

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/admin-server/admin-service.iml" filepath="$PROJECT_DIR$/admin-server/admin-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/umeet-admin-server/umeet-admin-server.iml" filepath="$PROJECT_DIR$/umeet-admin-server/umeet-admin-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/umeet-auth-server/umeet-auth-server.iml" filepath="$PROJECT_DIR$/umeet-auth-server/umeet-auth-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/umeet-clouds.iml" filepath="$PROJECT_DIR$/umeet-clouds.iml" />
+      <module fileurl="file://$PROJECT_DIR$/umeet-eureka-server/umeet-eureka-server.iml" filepath="$PROJECT_DIR$/umeet-eureka-server/umeet-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/umeet-gateway-server/umeet-gateway-server.iml" filepath="$PROJECT_DIR$/umeet-gateway-server/umeet-gateway-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/umeet-conference-server/umeete-conference-server.iml" filepath="$PROJECT_DIR$/umeet-conference-server/umeete-conference-server.iml" />
+    </modules>
+  </component>
+</project>
