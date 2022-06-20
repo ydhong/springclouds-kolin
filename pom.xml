@@ -35,7 +35,7 @@
 		<common.lang3.version>3.7</common.lang3.version>
 		<org.projectlombok.version>1.16.20</org.projectlombok.version>
 		<log4j.version>1.2.17</log4j.version>
-		<kotlin.version>1.2.41</kotlin.version>
+		<kotlin.version>1.6.0</kotlin.version>
 	</properties>
 
 	<dependencies>
